@@ -1,0 +1,118 @@
+.header {
+  background: url("../img/home-img.png") no-repeat center/cover;
+  height: 620px;
+  padding-bottom: 120px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 35px 0 15px;
+  }
+  &__logo {
+    &-img {
+      vertical-align: middle;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  &__nav--list {
+    display: flex;
+    flex-direction: row;
+  }
+  &__nav--list-item {
+    margin: 0 15px;
+
+  }
+  &__nav--list-link {
+    text-decoration: none;
+    color: $general-color;
+    font:400 16px/67px $font-asap;
+    line-height: 67px;
+    &:hover {
+      border-bottom: 2px solid $general-color;
+      transition: 0.3s;
+    }
+
+    @media (max-width: 760px) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: none;
+    margin-right: 4%;
+    font-size: 30px;
+
+    @media (max-width: 760px) {
+      display: inline-block;
+    }
+  }
+  .home-title {
+    color: $general-color;
+    font-family: $font-asap;
+    font-size: 32px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    margin-top: 161px;
+    margin-bottom: 50px;
+
+    @media (max-width: 900px) {
+      font-size: 23px;
+    }
+    @media (max-width: 540px) {
+      font-size: 17px;
+    }
+  }
+    .home-title-description {
+      color: $general-color;
+      font: 700 66px $font-asap;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 100px;
+
+      @media screen and  (max-width: 900px) {
+        font-size: 50px;
+      }
+      @media (max-width: 540px) {
+        font-size: 35px;
+        margin-bottom: 90px;
+      }
+    }
+    .home-link {
+      display: flex;
+      justify-content: center;
+
+      @media (max-width: 900px) {
+        font-size: 17px;
+      }
+      @media (max-width: 540px) {
+        font-size: 14px;
+      }
+    }
+    .home-text {
+      font: 700 23px $font-asap;
+      border: 2px solid $color-white;
+      padding: 25px 69px;
+      display: inline-block;
+      box-sizing: border-box;
+      color: $color-white;
+      text-decoration: none;
+      &:hover {
+        background-color: #15a4fa;
+      }
+      @media (max-width: 900px) {
+        font-size: 17px;
+        text-align: center;
+      }
+      @media (max-width: 540px) {
+        font-size: 14px;
+        text-align: center;
+      }
+
+    }
+
+  }

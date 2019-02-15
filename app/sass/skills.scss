@@ -1,0 +1,46 @@
+.skills {
+  padding: 100px 0 94px;
+
+  @media (max-width: 961px) {
+    justify-content: center;
+  }
+  &__container {
+    max-width: 374px;
+    display: inline-block;
+    justify-content: flex-start;
+    margin-right: 112px;
+  }
+  &__container-1 {
+    max-width: 374px;
+    display: inline-block;
+    justify-content: flex-end;
+  }
+  &__element {
+    padding: 0 10px;
+    display: flex;
+  }
+  &__img-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 72px;
+    height: 72px;
+    border-radius: 100%;
+    background-color: $color-black;
+  }
+  &__text-block {
+    margin-left: 20px;
+    max-width: 284px;
+    display: inline-block;
+  }
+  &__title-block {
+    color: $color-black;
+    font: 500 22px $font-asap;
+    margin-bottom: 10px;
+  }
+  &__description-block {
+    color: $color-hex;
+    font: 400 18px/18px $font-asap;
+    margin-bottom: 43px;
+  }
+}

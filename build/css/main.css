@@ -1,0 +1,514 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.wrapper {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto; }
+
+.header {
+  background: url("../img/home-img.png") no-repeat center/cover;
+  height: 620px;
+  padding-bottom: 120px; }
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 35px 0 15px; }
+  .header__logo-img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto; }
+  .header__nav--list {
+    display: flex;
+    flex-direction: row; }
+  .header__nav--list-item {
+    margin: 0 15px; }
+  .header__nav--list-link {
+    text-decoration: none;
+    color: #d4d4d4;
+    font: 400 16px/67px "Brandon Grotesque", sans-serif;
+    line-height: 67px; }
+    .header__nav--list-link:hover {
+      border-bottom: 2px solid #d4d4d4;
+      transition: 0.3s; }
+    @media (max-width: 760px) {
+      .header__nav--list-link {
+        display: none; } }
+  .header__burger {
+    display: none;
+    margin-right: 4%;
+    font-size: 30px; }
+    @media (max-width: 760px) {
+      .header__burger {
+        display: inline-block; } }
+  .header .home-title {
+    color: #d4d4d4;
+    font-family: "Brandon Grotesque", sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    margin-top: 161px;
+    margin-bottom: 50px; }
+    @media (max-width: 900px) {
+      .header .home-title {
+        font-size: 23px; } }
+    @media (max-width: 540px) {
+      .header .home-title {
+        font-size: 17px; } }
+  .header .home-title-description {
+    color: #d4d4d4;
+    font: 700 66px "Brandon Grotesque", sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px; }
+    @media screen and (max-width: 900px) {
+      .header .home-title-description {
+        font-size: 50px; } }
+    @media (max-width: 540px) {
+      .header .home-title-description {
+        font-size: 35px;
+        margin-bottom: 90px; } }
+  .header .home-link {
+    display: flex;
+    justify-content: center; }
+    @media (max-width: 900px) {
+      .header .home-link {
+        font-size: 17px; } }
+    @media (max-width: 540px) {
+      .header .home-link {
+        font-size: 14px; } }
+  .header .home-text {
+    font: 700 23px "Brandon Grotesque", sans-serif;
+    border: 2px solid #ffffff;
+    padding: 25px 69px;
+    display: inline-block;
+    box-sizing: border-box;
+    color: #ffffff;
+    text-decoration: none; }
+    .header .home-text:hover {
+      background-color: #15a4fa; }
+    @media (max-width: 900px) {
+      .header .home-text {
+        font-size: 17px;
+        text-align: center; } }
+    @media (max-width: 540px) {
+      .header .home-text {
+        font-size: 14px;
+        text-align: center; } }
+
+.web-dev {
+  padding-top: 100px;
+  padding-bottom: 96px; }
+  .web-dev__text-block {
+    margin: 0 15px;
+    max-width: 555px;
+    display: inline-block; }
+    @media (max-width: 760px) {
+      .web-dev__text-block {
+        width: 90%; } }
+  .web-dev__title-block {
+    margin-bottom: 35px;
+    color: #222222;
+    font: 300 55px/75px "Brandon Grotesque", sans-serif;
+    letter-spacing: -1.5px; }
+    .web-dev__title-block span {
+      font-weight: 700;
+      letter-spacing: -1.5px; }
+    @media (max-width: 760px) {
+      .web-dev__title-block {
+        text-align: center;
+        display: block;
+        font-size: 45px; } }
+  .web-dev__description-block {
+    color: #777777;
+    font: 400 18px "Brandon Grotesque", sans-serif;
+    margin-bottom: 40px; }
+  .web-dev__img-block {
+    max-width: 240px;
+    display: inline-block;
+    vertical-align: super;
+    margin-left: 74px; }
+    .web-dev__img-block img {
+      max-width: 100%;
+      height: 222px; }
+      @media (max-width: 760px) {
+        .web-dev__img-block img {
+          display: block;
+          max-width: 200px; } }
+
+.branding {
+  background-color: #fafafa;
+  padding-top: 100px;
+  padding-bottom: 96px; }
+  .branding__img-block {
+    max-width: 272px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 54px; }
+    .branding__img-block img {
+      max-width: 100%;
+      height: 197px; }
+      @media (max-width: 760px) {
+        .branding__img-block img {
+          max-width: 200px;
+          margin: 0 auto; } }
+  .branding__text-block {
+    margin: 0 15px;
+    max-width: 516px; }
+    @media (max-width: 760px) {
+      .branding__text-block {
+        width: 90%; } }
+  .branding__title-block {
+    margin-bottom: 35px;
+    color: #222222;
+    font: 300 60px/75px "Brandon Grotesque", sans-serif;
+    letter-spacing: -1.5px; }
+    .branding__title-block span {
+      font-weight: 700;
+      letter-spacing: -1.5px; }
+    @media (max-width: 760px) {
+      .branding__title-block {
+        text-align: center; } }
+  .branding__description-block {
+    color: #777777;
+    font: 400 18px "Brandon Grotesque", sans-serif;
+    margin-bottom: 40px; }
+
+.skills {
+  padding: 100 0 94px; }
+  @media (max-width: 961px) {
+    .skills {
+      justify-content: center; } }
+  .skills__container {
+    max-width: 374px;
+    display: inline-block;
+    justify-content: flex-start;
+    margin-right: 112px; }
+  .skills__container-1 {
+    max-width: 374px;
+    display: inline-block;
+    justify-content: flex-end; }
+  .skills__element {
+    padding: 0 10px;
+    display: flex; }
+  .skills__img-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 72px;
+    height: 72px;
+    border-radius: 100%;
+    background-color: #222222; }
+  .skills__text-block {
+    margin-left: 20px;
+    max-width: 284px;
+    display: inline-block; }
+  .skills__title-block {
+    color: #222222;
+    font: 500 22px "Brandon Grotesque", sans-serif;
+    margin-bottom: 10px; }
+  .skills__description-block {
+    color: #777777;
+    font: 400 18px/18px "Brandon Grotesque", sans-serif;
+    margin-bottom: 43px; }
+
+.awe-client {
+  background-color: #fafafa; }
+  .awe-client__title {
+    color: #222222;
+    font: 300 60px/75px "Brandon Grotesque", sans-serif; }
+    .awe-client__title span {
+      font: 700 60px/75px "Brandon Grotesque", sans-serif; }
+    @media (max-width: 760px) {
+      .awe-client__title {
+        font-size: 50px; } }
+    @media (max-width: 583px) {
+      .awe-client__title {
+        text-align: center;
+        font-size: 40px; } }
+  .awe-client__subtitle {
+    font: 400 22px "Brandon Grotesque", sans-serif;
+    color: #777777;
+    margin-bottom: 45px; }
+    @media (max-width: 621px) {
+      .awe-client__subtitle {
+        font-size: 15px; } }
+  .awe-client__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px; }
+    @media (max-width: 916px) {
+      .awe-client__block {
+        display: block; } }
+    .awe-client__block-photo {
+      margin-bottom: 20px; }
+      @media (max-width: 961px) {
+        .awe-client__block-photo {
+          width: 33%; } }
+      @media (max-width: 621px) {
+        .awe-client__block-photo {
+          width: 42%; } }
+    .awe-client__block-item {
+      margin: 0 35px;
+      padding: 35px 62px;
+      border: 1px solid #e8e8e8;
+      text-align: left;
+      background-color: #ffffff; }
+      @media (max-width: 621px) {
+        .awe-client__block-item {
+          padding: 25px; } }
+      .awe-client__block-item-text {
+        font: 400 26px/28px "Brandon Grotesque", sans-serif;
+        color: #d4d4d4;
+        margin-bottom: 10px; }
+        @media (max-width: 621px) {
+          .awe-client__block-item-text {
+            font-size: 18px;
+            line-height: 24px; } }
+      .awe-client__block-item-author {
+        color: #7690c5;
+        font: 400 20px/36px "Brandon Grotesque", sans-serif; }
+        @media (max-width: 621px) {
+          .awe-client__block-item-author {
+            font-size: 14px;
+            line-height: 30px; } }
+  .awe-client__blocktwo {
+    flex-direction: row-reverse; }
+
+.logos {
+  padding-top: 61px;
+  padding-bottom: 59px; }
+  .logos__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; }
+  .logos__item {
+    text-align: center;
+    margin: 3%; }
+
+.amazing {
+  padding-top: 100px;
+  background-color: #111111;
+  text-align: center;
+  padding-bottom: 98px; }
+  .amazing__text-block {
+    margin-bottom: 80px; }
+    .amazing__text-block .title-block {
+      color: #d4d4d4;
+      font: 200 60px/75px "Brandon Grotesque", sans-serif;
+      letter-spacing: -1.5px;
+      margin-bottom: 3px; }
+      .amazing__text-block .title-block .span-title {
+        font-weight: 700;
+        letter-spacing: -1.5px; }
+    .amazing__text-block .description-block {
+      color: #777777;
+      font: 400 22px "Brandon Grotesque", sans-serif; }
+  .amazing__container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+  .amazing__container-img {
+    max-width: 220px; }
+  .amazing__container-item {
+    margin-top: 80px; }
+  .amazing__container-item-title {
+    margin-top: 26px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold; }
+  .amazing__container-item-text {
+    margin-top: 13px;
+    color: #ffffff;
+    font-size: 16px; }
+  .amazing__container-item-social {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 11px; }
+  .amazing__container-item-menu {
+    padding: 12px;
+    border-radius: 50%;
+    border: 2px solid #ffffff; }
+  .amazing__container-item-menu:hover {
+    color: #000;
+    background-color: #ffffff;
+    transition: 0.3s ease; }
+  .amazing__text {
+    margin: 49px auto 0;
+    max-width: 600px;
+    color: #ebebeb;
+    font-size: 20px;
+    font-weight: 400; }
+
+.twitter,
+.facebook,
+.pinterest,
+.google {
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  padding: 12px 10px; }
+
+.twitter:hover,
+.facebook:hover,
+.pinterest:hover,
+.google:hover {
+  background-color: #d4d4d4; }
+
+.footer {
+  background-color: #7690c5;
+  padding-top: 100px; }
+  .footer__container {
+    width: 45%; }
+    @media (max-width: 960px) {
+      .footer__container {
+        width: 70%; } }
+    @media (max-width: 583px) {
+      .footer__container {
+        width: 90%; } }
+  .footer__container-title {
+    color: #d4d4d4;
+    font: 300 60px/75px "Brandon Grotesque", sans-serif; }
+    .footer__container-title span {
+      font-weight: 700; }
+    @media (max-width: 760px) {
+      .footer__container-title {
+        font-size: 50px; } }
+    @media (max-width: 583px) {
+      .footer__container-title {
+        text-align: center;
+        font-size: 40px; } }
+  .footer__container-text {
+    color: #d4d4d4;
+    font: 400 18px/24px "Brandon Grotesque", sans-serif; }
+    @media (max-width: 583px) {
+      .footer__container-text {
+        font-size: 15px; } }
+  .footer__container-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .footer__container-block-item {
+    width: 49%;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    font: 400 18px "Brandon Grotesque", sans-serif;
+    color: #ffffff;
+    margin: 25px 0;
+    transition-duration: 0.4s; }
+    @media (max-width: 960px) {
+      .footer__container-block-item {
+        width: 33%;
+        font-size: 15px; } }
+    @media (max-width: 708px) {
+      .footer__container-block-item {
+        width: 50%; } }
+    @media (max-width: 460px) {
+      .footer__container-block-item {
+        width: 90%;
+        margin: 8px 0; } }
+  .footer__block {
+    display: flex;
+    justify-content: space-around; }
+    @media (max-width: 960px) {
+      .footer__block {
+        display: block;
+        font-size: 15px; } }
+  .footer__container-form {
+    width: 100%;
+    max-width: 750px;
+    display: flex;
+    flex-direction: column; }
+  .footer__container-item {
+    max-width: 456px;
+    margin: 15px 0;
+    width: 100%;
+    padding: 15px; }
+    @media (max-width: 960px) {
+      .footer__container-item {
+        width: 60%; } }
+    @media (max-width: 508px) {
+      .footer__container-item {
+        width: 75%;
+        font-size: 15px; } }
+  .footer__container-item-textarea {
+    max-width: 456px;
+    padding: 15px;
+    width: 100%;
+    min-height: 210px;
+    resize: none; }
+    @media (max-width: 960px) {
+      .footer__container-item-textarea {
+        width: 60%; } }
+    @media (max-width: 508px) {
+      .footer__container-item-textarea {
+        width: 75%;
+        font-size: 15px; } }
+  .footer__border {
+    border: 2px solid #d4d4d4;
+    max-width: 940px;
+    margin: 0 auto; }
+    @media (max-width: 508px) {
+      .footer__border {
+        max-width: 300px; } }
+  .footer__container-description {
+    margin-top: 135px;
+    font: 500 16px/22px "Brandon Grotesque", sans-serif;
+    color: #ffffff;
+    width: 95%;
+    text-align: center;
+    position: relative; }
+    @media (max-width: 708px) {
+      .footer__container-description {
+        margin-top: 80px; } }

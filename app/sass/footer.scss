@@ -1,0 +1,131 @@
+.footer {
+  background-color: #7690c5;
+  padding-top: 100px;
+ &__container {
+   width: 45%;
+
+   @media (max-width: 960px) {
+     width: 70%;
+   }
+   @media (max-width: 583px) {
+     width: 90%;
+   }
+ }
+ &__container-title {
+   color: $general-color;
+   font: 300 60px/75px $font-asap;
+   span {
+     font-weight: 700;
+   }
+
+   @media (max-width: 760px) {
+     font-size: 50px;
+   }
+   @media (max-width: 583px) {
+     text-align: center;
+     font-size: 40px;
+   }
+ }
+ &__container-text {
+   color: $general-color;
+   font: 400 18px/24px $font-asap;
+
+   @media (max-width: 583px) {
+     font-size: 15px;
+   }
+ }
+ &__container-block{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+ &__container-block-item {
+   width: 49%;
+   display: inline-flex;
+   justify-content: flex-start;
+   align-items: center;
+   text-decoration: none;
+   font: 400 18px $font-asap;
+   color: $color-white;
+   margin: 25px 0;
+   transition-duration: 0.4s;
+
+   @media (max-width: 960px) {
+     width: 33%;
+     font-size: 15px;
+   }
+   @media (max-width: 708px) {
+     width: 50%;
+   }
+   @media (max-width: 460px) {
+     width: 90%;
+     margin: 8px 0;
+   }
+
+ }
+ &__block{
+   display: flex;
+   justify-content: space-around;
+
+   @media (max-width: 960px) {
+     display: block;
+     font-size: 15px;
+   }
+
+ }
+ &__container-form {
+   width:100%;
+   max-width: 750px;
+   display: flex;
+   flex-direction: column;
+ }
+ &__container-item {
+   max-width: 456px;
+   margin: 15px 0;
+   width: 100%;
+   padding: 15px;
+
+   @media (max-width: 960px) {
+     width: 60%;
+   }
+   @media (max-width: 508px) {
+     width: 75%;
+     font-size: 15px;
+   }
+ }
+  &__container-item-textarea{
+    max-width: 456px;
+    padding: 15px;
+    width: 100%;
+    min-height: 210px;
+    resize: none;
+    @media (max-width: 960px) {
+      width: 60%;
+    }
+    @media (max-width: 508px) {
+      width: 75%;
+      font-size: 15px;
+    }
+  }
+  &__border {
+   border: 2px solid $general-color;
+   max-width: 940px;
+   margin: 0 auto;
+
+    @media (max-width: 508px) {
+     max-width: 300px;
+    }
+  }
+ &__container-description {
+   margin-top: 135px;
+   font: 500 16px/22px $font-asap;
+   color: $color-white;
+   width: 95%;
+   text-align: center;
+   position: relative;
+
+   @media (max-width: 708px) {
+     margin-top: 80px;
+   }
+ }
+}
